@@ -1,0 +1,87 @@
+{
+  "name": "lowcode",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "uat": "vite build --mode uat",
+    "build": "vite build --mode uat",
+    "release": "vite build",
+    "serve": "vite preview --base /",
+    "type:check": "tsc --noEmit",
+    "commit": "cz-customizable",
+    "lint": "eslint --fix .",
+    "format": "prettier --write '**/*.{ts,tsx,js,vue,css,scss,html,json}'",
+    "chrome": "open -n /Applications/Google\\ Chrome.app/ --args --disable-web-security  --user-data-dir=$HOME/MyChromeDevUserData/"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "amis": "^1.6.0",
+    "amis-editor": "^4.0.1-beta.19",
+    "axios": "0.21.1",
+    "bootstrap": "^3.4.1",
+    "codemirror": "^5.63.0",
+    "copy-to-clipboard": "^3.3.1",
+    "cropperjs": "^1.5.12",
+    "echarts": "5.2.2",
+    "echarts-stat": "^1.2.0",
+    "exceljs": "^4.3.0",
+    "froala-editor": "3.1.1",
+    "hls.js": "1.0.10",
+    "moment": "^2.29.1",
+    "monaco-editor": "^0.31.1",
+    "mpegts.js": "^1.6.10",
+    "papaparse": "^5.3.0",
+    "qs": "6.10.2",
+    "react": "^16.8",
+    "react-cropper": "^2.1.8",
+    "react-datetime": "^3.1.1",
+    "react-dom": "^16.8",
+    "react-router": "5.0.1",
+    "react-router-dom": "5.0.1",
+    "tinymce": "^5.10.2",
+    "ts-deepmerge": "^1.1.0",
+    "ts-essentials": "^9.1.0",
+    "tslib": "^2.3.1",
+    "video-react": "^0.14.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@nexhome/yorkie": "^2.0.8",
+    "@types/node": "^17.0.5",
+    "@types/prettier": "^2.4.2",
+    "@types/qs": "^6.9.7",
+    "@types/react": "^16.8",
+    "@types/react-dom": "^16.8",
+    "@types/react-router-dom": "^5.3.2",
+    "@types/swagger-schema-official": "^2.0.22",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.9.0",
+    "@vitejs/plugin-react": "^1.1.4",
+    "@vue3-oop/vite-plugin-monaco-editor": "1.1.0",
+    "commitizen": "^4.2.4",
+    "commitlint-config-cz": "^0.13.3",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "lint-staged": "^12.1.5",
+    "prettier": "^2.5.1",
+    "sass": "^1.45.1",
+    "typescript": "^4.5.4",
+    "vite": "2.7.10",
+    "vite-plugin-mockit": "^1.0.2"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint -E GIT_PARAMS"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,vue,js}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss,html,json}": [
+      "prettier --write"
+    ]
+  }
+}
