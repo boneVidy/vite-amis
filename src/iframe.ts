@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom'
 
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/css/v4-shims.css'
-import 'bootstrap/dist/css/bootstrap.css'
 import 'amis/lib/themes/cxd.css'
 import 'amis/lib/helper.css'
 import 'amis/sdk/iconfont.css'

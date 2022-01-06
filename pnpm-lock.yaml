@@ -18,7 +18,6 @@ specifiers:
   amis: ^1.6.0
   amis-editor: ^4.0.1-beta.19
   axios: 0.21.1
-  bootstrap: ^3.4.1
   codemirror: ^5.63.0
   commitizen: ^4.2.4
   commitlint-config-cz: ^0.13.3
@@ -61,7 +60,6 @@ dependencies:
   amis: 1.6.0_@types+react@16.14.21
   amis-editor: 4.0.1-beta.19_5b489a1176bc1d376f352b75f5a85b78
   axios: 0.21.1
-  bootstrap: 3.4.1
   codemirror: 5.65.0
   copy-to-clipboard: 3.3.1
   cropperjs: 1.5.12
@@ -1302,11 +1300,6 @@ packages:
       raw-body: 2.4.2
       type-is: 1.6.18
     dev: true
-
-  /bootstrap/3.4.1:
-    resolution: {integrity: sha512-yN5oZVmRCwe5aKwzRj6736nSmKDX7pLYwsXiCj/EYmo16hODaBiT4En5btW/jhBF/seV+XMx3aYwukYC3A49DA==, tarball: bootstrap/download/bootstrap-3.4.1.tgz}
-    engines: {node: '>=6'}
-    dev: false
 
   /brace-expansion/1.1.11:
     resolution: {integrity: sha1-PH/L9SnYcibz0vUrlm/1Jx60Qd0=, tarball: brace-expansion/download/brace-expansion-1.1.11.tgz}
